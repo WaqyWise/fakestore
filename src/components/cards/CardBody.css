@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
+    text-decoration: none;
   }
   @media screen and (max-width: 1040px) {
     .card__body {
@@ -18,4 +19,7 @@
     .card__body {
       display: none;
     }
+  }
+  div {
+    text-decoration: none;
   }

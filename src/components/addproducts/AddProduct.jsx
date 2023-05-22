@@ -8,9 +8,8 @@ const AddProducts = ({ items, click, removeItem, setAddedItem }) => {
       return pre + Number(cur.addNumber) * Number(cur.price);
     }, 0)
     .toFixed(2);
-  // let curDate = new Date();
-  // console.log(curDate);
-  const showDivRef = useRef(null);
+  
+    const showDivRef = useRef(null);
 
   return (
     <div ref={showDivRef} className="addproducts__container">
@@ -18,7 +17,6 @@ const AddProducts = ({ items, click, removeItem, setAddedItem }) => {
         <div className="check-out-container">
           <div className="check-out-print">
             <h1 className="check-out-title">Shopping</h1>
-            {/* <p>{curDate}</p> */}
             <table>
               <thead>
                 <tr>
@@ -64,9 +62,7 @@ const AddProducts = ({ items, click, removeItem, setAddedItem }) => {
               showDivRef.current.classList.add("animate");
               setTimeout(() => click(false), 200);
             }}
-          >
-            ⌫
-          </button>
+          >X</button>
         </div>
         <div className="right-side-body">
           {items.map((item, i, itemsArr) => (
@@ -89,7 +85,6 @@ const AddProducts = ({ items, click, removeItem, setAddedItem }) => {
             <button
               className="check-out-btn"
               onClick={() => {
-                items.length >= 1 && print();
               }}
             >
               Check Out

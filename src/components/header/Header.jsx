@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <img className="header__logo"  alt="" />
-      <h1>Shopping</h1>
+      <h1>Fake Store</h1>
     </header>
   );
 };

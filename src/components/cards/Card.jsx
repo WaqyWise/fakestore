@@ -27,7 +27,7 @@ const Card = ({ product, addItem, removeItem, addedItems }) => {
             setIsAdded(!isAdded);
           }}
         >
-          {isAdded ? "ADD " : "CANCLE"}
+          {isAdded ? "+" : "-"}
         </button>
       </div>
     </div>

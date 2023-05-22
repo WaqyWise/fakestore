@@ -1,7 +1,6 @@
 .addproducts__container {
     height: 100vh;
     position: fixed;
-  
     width: 100%;
     top: 0;
     right: 0;
@@ -31,18 +30,18 @@
   }
   .right-side-body {
     padding: 2.5rem 1rem;
-    /* background-color: var(--softer-color); */
+    background-color: var(--color-color);
     height: 70vh;
     overflow: scroll;
   }
   .right-side-footer {
     height: 20vh;
-    /* background-color: var(--color-primary); */
+    background-color: var(--color-color);
   }
   .total-items {
-    background-color: var(--color-primary);
+    background-color: var(--softer-color);
     padding: 0.5rem 1rem;
-    color: var(--color-white);
+    color: var(--soft-color);
     border-radius: 0.5rem;
   }
   .footer-head {
@@ -61,7 +60,7 @@
   .check-out-btn {
     font-size: 2rem;
     padding: 1rem 2rem;
-    background-color: var(--color-primary);
+    background-color: var(--color-waring);
     border: 2px solid var(--color-white);
     color: var(--color-white);
     border-radius: 0.5rem;
@@ -71,8 +70,8 @@
   }
   .check-out-btn:hover {
     background-color: var(--color-white);
-    border-color: var(--color-primary);
-    color: var(--color-primary);
+    border-color: var(--color-waring);
+    color: var(--color-waring);
   }
   /*============= Check Out Print=============*/
   .check-out-container {

@@ -22,7 +22,7 @@ const CardList = ({ item, removeItem, setAddedItem, itemsArr }) => {
 
   useEffect(() => {
     const newArr = itemsArr.map((itemArr) => {
-      itemArr.id === item.id && (item.addNumber === state.addNumber);
+      itemArr.id === item.id && (item.addNumber = state.addNumber);
       return itemArr;
     });
     setAddedItem(newArr);
@@ -37,9 +37,7 @@ const CardList = ({ item, removeItem, setAddedItem, itemsArr }) => {
           document.querySelector(".card-list-body").classList.add("animate");
           setTimeout(() => removeItem(item), 190);
         }}
-      >
-        ✘
-      </button>
+      >X</button>
       <h4>{item.title}</h4>
       <hr />
       <div className="card-list-add-minu-body">
